@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edEdtiText;
     Button btnSend;
     int score;
-    CustomerInfo C1;
+
 
    @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
         edEdtiText = findViewById(R.id.editText);
         btnSend = findViewById(R.id.button);
-        C1.age = 0;
+        score = 0;
 
        btnSend.setOnClickListener(new View.OnClickListener() {
 
            @Override
            public void onClick(View v) {
-               C1.age ++;
+               score++;
                Toast.makeText(MainActivity.this, "score"+score, Toast.LENGTH_SHORT).show();
            }
        });
